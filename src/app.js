@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import helmet from 'helmet';
 import path from 'path';
-import { routes } from './routes'
+import { routers } from './routers'
 import { logger } from './modules/Logger';
 
 // Create Express server
@@ -17,7 +17,7 @@ app.use(compression());
 app.use(helmet());
 
 // Run routes
-routes(app);
+routers(app);
 
 // Catch all routes
 app.use((req, res, next) => {
