@@ -50,3 +50,5 @@ node_modules
 .idea
 .idea/
 src/config
+test/.nyc_output
+test/coverage

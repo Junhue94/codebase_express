@@ -1,4 +1,5 @@
 --require babel-core/register
---reporter spec
+--reporter min
+--watch
 --timeout 10000
 test/**/*.spec.js
